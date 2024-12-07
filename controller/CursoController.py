@@ -43,6 +43,7 @@ class CursoController:
    
     def listarCursos(self):
         listaCursos = self.objCursoRepository.listarCursos()
+        print(listaCursos)
         cantidad = len(listaCursos)
         self.ventana.tblcurso.setRowCount(cantidad)
         fila = 0
